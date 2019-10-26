@@ -116,5 +116,10 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@BloodAxe](https://github.com/BloodAxe/)
+* [@albu](https://github.com/albu/)
+* [@creafz](https://github.com/creafz/)
 * [@mdraw](https://github.com/mdraw/)
+* [@nrweir](https://github.com/nrweir/)
+* [@ternaus](https://github.com/ternaus/)
 
