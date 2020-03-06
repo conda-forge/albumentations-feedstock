@@ -1,5 +1,5 @@
 {% set name = "albumentations" %}
-{% set version = "0.4.3" %}
+{% set version = "0.4.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 358318cc2f8b5ef5a2cb9834d751172cc4c64fa1ef9c8ed9bb9a0ac7afa25b87
+  sha256: e9c8a0b54c4182e39576200092564913f6dca7a67ca5aec9bdaa80b8bef93c24
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -34,7 +34,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Fast image augmentation library and easy to use wrapper around other libraries'
+  summary: Fast image augmentation library and easy to use wrapper around other libraries
 
   doc_url: https://albumentations.readthedocs.io/
   dev_url: https://github.com/albu/albumentations
