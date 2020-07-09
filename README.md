@@ -5,7 +5,7 @@ Home: https://github.com/albu/albumentations
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Fast image augmentation library and easy to use wrapper around other libraries
 
