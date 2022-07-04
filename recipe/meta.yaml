@@ -22,6 +22,7 @@ requirements:
     - python >=3.6
     - numpy >=1.11.1
     - scipy
+    - scikit-image >=0.16.1
     - pyyaml
     - qudida >=0.0.4
     - opencv >=4.1.1
