@@ -16,14 +16,15 @@ build:
 
 requirements:
   host:
-    - python >=3.5
+    - python >=3.6
     - pip
   run:
-    - python >=3.5
-    - numpy
-    - imgaug
+    - python >=3.6
+    - numpy >=1.11.1
+    - scipy
     - pyyaml
-    - opencv
+    - qudida >=0.0.4
+    - opencv >=4.1.1
 
 test:
   imports:
