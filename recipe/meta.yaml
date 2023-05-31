@@ -8,6 +8,8 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: be1af36832c8893314f2a5550e8ac19801e04770734c1b70fa3c996b41f37bed
+  patches:
+    - opencv.patch
 
 build:
   noarch: python
