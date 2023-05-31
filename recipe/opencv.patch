@@ -1,0 +1,22 @@
+From 8c0b1089609231e29f47fc17246cb6781159f477 Mon Sep 17 00:00:00 2001
+From: Jan Janssen <jan-janssen@users.noreply.github.com>
+Date: Wed, 31 May 2023 10:42:46 -0600
+Subject: [PATCH] Update setup.py
+
+---
+ setup.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/setup.py b/setup.py
+index 3cbeb82..2990d8e 100644
+--- a/setup.py
++++ b/setup.py
+@@ -65,7 +65,7 @@ def get_install_requirements(install_requires, choose_install_requires):
+     url="https://github.com/albumentations-team/albumentations",
+     packages=find_packages(exclude=["tests"]),
+     python_requires=">=3.6",
+-    install_requires=get_install_requirements(INSTALL_REQUIRES, CHOOSE_INSTALL_REQUIRES),
++    install_requires=INSTALL_REQUIRES,
+     extras_require={"tests": ["pytest"], "imgaug": ["imgaug>=0.4.0"], "develop": ["pytest", "imgaug>=0.4.0"]},
+     classifiers=[
+         "Development Status :: 4 - Beta",
