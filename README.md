@@ -1,11 +1,11 @@
-About albumentations
-====================
+About albumentations-feedstock
+==============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/albumentations-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/albu/albumentations
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/albumentations-feedstock/blob/main/LICENSE.txt)
 
 Summary: Fast image augmentation library and easy to use wrapper around other libraries
 

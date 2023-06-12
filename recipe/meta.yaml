@@ -1,5 +1,5 @@
 {% set name = "albumentations" %}
-{% set version = "1.3.0" %}
+{% set version = "1.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: be1af36832c8893314f2a5550e8ac19801e04770734c1b70fa3c996b41f37bed
+  sha256: a6a38388fe546c568071e8c82f414498e86c9ed03c08b58e7a88b31cf7a244c6
 
 build:
   noarch: python
@@ -16,12 +16,12 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - pip
   run:
-    - python >=3.6
+    - python >=3.7
     - numpy >=1.11.1
-    - scipy
+    - scipy >=1.1.0
     - scikit-image >=0.16.1
     - pyyaml
     - qudida >=0.0.4
