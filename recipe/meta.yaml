@@ -16,12 +16,12 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - pip
   run:
-    - python >=3.6
+    - python >=3.7
     - numpy >=1.11.1
-    - scipy
+    - scipy >=1.1.0
     - scikit-image >=0.16.1
     - pyyaml
     - qudida >=0.0.4
