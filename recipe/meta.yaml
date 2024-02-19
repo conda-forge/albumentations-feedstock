@@ -16,16 +16,16 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.8
     - pip
   run:
-    - python >=3.7
-    - numpy >=1.11.1
-    - scipy >=1.1.0
-    - scikit-image >=0.16.1
+    - python >=3.8
+    - numpy >=1.24.4
+    - scipy >=1.10.0
+    - scikit-image >=0.21.0
     - pyyaml
     - qudida >=0.0.4
-    - opencv >=4.1.1
+    - opencv >=4.9.0
 
 test:
   imports:
