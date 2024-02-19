@@ -1,5 +1,5 @@
 {% set name = "albumentations" %}
-{% set version = "1.3.1" %}
+{% set version = "1.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a6a38388fe546c568071e8c82f414498e86c9ed03c08b58e7a88b31cf7a244c6
+  sha256: 649f8a14896f788b356ecc70083c4fb91bedab4ff4e2b39ad217a824e189ded0
 
 build:
   noarch: python
@@ -16,16 +16,16 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.8
     - pip
   run:
-    - python >=3.7
-    - numpy >=1.11.1
-    - scipy >=1.1.0
-    - scikit-image >=0.16.1
+    - python >=3.8
+    - numpy >=1.24.4
+    - scipy >=1.10.0
+    - scikit-image >=0.21.0
     - pyyaml
     - qudida >=0.0.4
-    - opencv >=4.1.1
+    - opencv >=4.9.0
 
 test:
   imports:
