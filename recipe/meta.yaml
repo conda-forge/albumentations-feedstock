@@ -1,5 +1,5 @@
 {% set name = "albumentations" %}
-{% set version = "1.4.1" %}
+{% set version = "1.4.10" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 556c53a958bd26ce484f545058d755af55db13a80b8aef6946b87adcb38a5545
+  sha256: 739e96afcd1065b3804a6d621b2a95dfec560010a83a2e55c39ba307bdd59f41
 
 build:
   noarch: python
@@ -20,12 +20,16 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - numpy >=1.24.4
+    - numpy >=1.24.4,<2
     - scipy >=1.10.0
     - scikit-image >=0.21.0
     - pyyaml
     - qudida >=0.0.4
     - opencv >=4.9.0
+    - albucore >=0.0.11
+    - pydantic >=2.7.0
+    - scikit-learn >=1.3.2
+    - typing-extensions>=4.9.0
 
 test:
   imports:
