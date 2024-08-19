@@ -24,12 +24,11 @@ requirements:
     - scipy >=1.10.0
     - scikit-image >=0.21.0
     - pyyaml
-    - qudida >=0.0.4
     - opencv >=4.9.0.80
-    - albucore >=0.0.11
+    - albucore >=0.0.13
     - pydantic >=2.7.0
-    - scikit-learn >=1.3.2
     - typing-extensions >=4.9.0
+    - eval-type-backport
 
 test:
   imports:
