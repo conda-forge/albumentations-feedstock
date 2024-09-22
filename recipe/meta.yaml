@@ -1,5 +1,5 @@
 {% set name = "albumentations" %}
-{% set version = "1.4.14" %}
+{% set version = "1.4.15" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: afc6caeba7eaf3c4e1128b2d9ff4475b03d1833f2f52f47a7e53a07afd5f72cc
+  sha256: 0e86c2e522f12c7f413d765d6095523b9e65a7bfe3d08fb9599d98a989093a48
 
 build:
   noarch: python
@@ -20,12 +20,13 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - numpy >=1.24.4,<2
+    - numpy >=1.24.4
     - scipy >=1.10.0
     - scikit-image >=0.21.0
     - pyyaml
-    - opencv >=4.9.0.80
-    - albucore >=0.0.13
+    - opencv >=4.9.0
+    # https://github.com/albumentations-team/albumentations/issues/1946
+    - albucore >=0.0.15,<0.0.17
     - pydantic >=2.7.0
     - typing-extensions >=4.9.0
     - eval-type-backport
