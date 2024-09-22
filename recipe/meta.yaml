@@ -20,12 +20,13 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - numpy >=1.24.4,<2
+    - numpy >=1.24.4
     - scipy >=1.10.0
     - scikit-image >=0.21.0
     - pyyaml
     - opencv >=4.9.0
-    - albucore 0.0.17
+    # https://github.com/albumentations-team/albumentations/issues/1946
+    - albucore >=0.0.15,<0.0.17
     - pydantic >=2.7.0
     - typing-extensions >=4.9.0
     - eval-type-backport
