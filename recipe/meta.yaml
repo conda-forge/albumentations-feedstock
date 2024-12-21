@@ -6,20 +6,20 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 0e86c2e522f12c7f413d765d6095523b9e65a7bfe3d08fb9599d98a989093a48
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - numpy >=1.24.4
     - scipy >=1.10.0
     - scikit-image >=0.21.0
@@ -32,6 +32,8 @@ requirements:
     - eval-type-backport
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - albumentations
 
