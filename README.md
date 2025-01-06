@@ -151,6 +151,6 @@ Feedstock Maintainers
 * [@albu](https://github.com/albu/)
 * [@creafz](https://github.com/creafz/)
 * [@mdraw](https://github.com/mdraw/)
-* [@nrweir](https://github.com/nrweir/)
+* [@mukhery](https://github.com/mukhery/)
 * [@ternaus](https://github.com/ternaus/)
 
