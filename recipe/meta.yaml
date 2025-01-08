@@ -1,5 +1,5 @@
 {% set name = "albumentations" %}
-{% set version = "1.4.19" %}
+{% set version = "1.4.20" %}
 
 package:
   name: {{ name|lower }}
