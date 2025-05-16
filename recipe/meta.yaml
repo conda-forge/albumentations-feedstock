@@ -1,5 +1,5 @@
 {% set name = "albumentations" %}
-{% set version = "2.0.5" %}
+{% set version = "2.0.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e19e1c0f14c903c3c230f3d83f14814b84f1180393189bf96779f653031f3278
+  sha256: 8f0c4fd069bf8d08a8bcbedd9c8c3f320245ddea559eaadf42a949397987f2d9
 
 build:
   noarch: python
@@ -26,7 +26,7 @@ requirements:
     - scipy >=1.10.0
     - pyyaml
     - opencv >=4.9.0.80
-    - albucore ==0.0.23
+    - albucore ==0.0.24
     - pydantic >=2.9.2
     - typing-extensions >=4.9.0
     - eval-type-backport
